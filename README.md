@@ -36,7 +36,7 @@ El proyecto aborda los siguientes desafíos:
 
 ## 🛠️ Estado del Proyecto
 
-Este proyecto está siendo desarrollado como parte de la asignatura Diseño de Sistemas I, Ciclo VII 2025, en la Universidad de El Salvador.
+Este proyecto está siendo desarrollado como parte de la asignatura Diseño de Sistemas I, Ciclo VII-2025, en la Universidad de El Salvador.
 
 ## 📚 Proyecto Académico
 
