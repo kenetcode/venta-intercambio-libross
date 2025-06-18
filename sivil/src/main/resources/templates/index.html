@@ -1,0 +1,226 @@
+<!doctype html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org"
+	th:replace="base::Layout(~{::body})">
+<head>
+<meta charset="UTF-8" />
+<title>Document</title>
+</head>
+<body>
+
+	<br>
+	
+	<!-- ================ SECTION INTRO ================ -->
+<section class="section-intro pt-3">
+	<div class="container">
+
+		<div class="row gx-3">
+			<main class="col-lg-9">
+				<article class="card-banner p-5 primary-background" style="height: 350px">
+					<div style="max-width: 500px">
+			        <h2 class="text-white">Libros en Venta o <br> Intercambiar </h2>
+			        <p class="text-white">La lectura es para la mente, lo que el ejercicio es para el cuerpo.</p>
+			        <a href="#" class="btn btn-warning"> Ver mas </a>
+			        </div>
+				</article>
+			</main>
+			<aside class="col-lg-3">
+				<article class="card-banner h-100" style="background-color: var(--bs-warning)">
+					<div class="card-body text-center">
+			        	<h5 class="mt-3 text-white">Regala un Libro</h5>
+			       		<p class="text-white">Un regalo con muchas historias por descubrir.</p>
+			        	<a href="#" class="btn btn-outline-light"> Ver mas </a>
+			        </div>
+				</article>
+			</aside>
+		</div> <!-- row //end -->
+
+	</div> <!-- container end.// -->
+</section>
+<!-- ================ SECTION INTRO END.// ================ -->
+
+	
+		
+
+	<div class="container mt-3">
+		<div class="row">
+			
+			<div class="row mt-2 g-4">
+				<div class="col-md-3">
+					<div class="card p-1 shadowed-2">
+						<div class="d-flex justify-content-between align-items-center p-2">
+							<div class="flex-column lh-1 imagename">
+								<span>Mobile</span> <span>Phones</span>
+							</div>
+							<div>
+								<img src="https://i.imgur.com/b9zkoz0.jpg" height="100"
+									width="100" />
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3">
+					<div class="card p-1 shadowed-2">
+						<div class="d-flex justify-content-between align-items-center p-2">
+							<div class="flex-column lh-1 imagename">
+								<span>Head</span> <span>Phones</span>
+							</div>
+							<div>
+								<img src="https://i.imgur.com/SHWASPG.png" height="100"
+									width="100" />
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3">
+					<div class="card p-1 shadowed-2">
+						<div class="d-flex justify-content-between align-items-center p-2">
+							<div class="flex-column lh-1 imagename">
+								<span>Smart</span> <span>Watches</span>
+							</div>
+							<div>
+								<img src=" https://i.imgur.com/Ya0OXCv.png" height="100"
+									width="100" />
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3">
+					<div class="card p-1 shadowed-2">
+						<div class="d-flex justify-content-between align-items-center p-2">
+							<div class="flex-column lh-1 imagename">
+								<span>Air</span> <span>Purifiers</span>
+							</div>
+							<div>
+								<img src="https://i.imgur.com/2gvGwbh.png" height="100"
+									width="100" />
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3">
+					<div class="card p-1 shadowed-2">
+						<div class="d-flex justify-content-between align-items-center p-2">
+							<div class="flex-column lh-1 imagename">
+								<span>Vacuum</span> <span>Cleaners</span>
+							</div>
+							<div>
+								<img src="https://i.imgur.com/UMQJpSG.png" height="100"
+									width="100" />
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3">
+					<div class="card p-1 shadowed-2">
+						<div class="d-flex justify-content-between align-items-center p-2">
+							<div class="flex-column lh-1 imagename">
+								<span>Washing</span> <span>Machines</span>
+							</div>
+							<div>
+								<img src="https://i.imgur.com/e9CyhXR.png" height="100"
+									width="100" />
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3">
+					<div class="card p-1 shadowed-2">
+						<div class="d-flex justify-content-between align-items-center p-2">
+							<div class="flex-column lh-1 imagename">
+								<span>Smart</span> <span>Televisions</span>
+							</div>
+							<div>
+								<img src=" https://i.imgur.com/Zq8VigZ.png" height="100"
+									width="100" />
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3">
+					<div class="card p-1 shadowed-2">
+						<div class="d-flex justify-content-between align-items-center p-2">
+							<div class="flex-column lh-1 imagename">
+								<span>Laptops</span>
+							</div>
+							<div>
+								<img src="https://i.imgur.com/6pK5oZl.jpg" height="100"
+									width="100" />
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<br>
+
+	<center>
+		<hr class="divider">
+	</center>
+
+	<h3 class="text-center">⭐ Explora Nuevo Ingreso! ⭐</h3>
+
+	<center>
+		<hr class="divider">
+	</center>
+
+	<br>
+
+	<div class="container">
+
+		<div class="row">
+
+			<div th:each="p : ${products}" class="col-md-6 col-lg-3 mb-2">
+
+				<div class="card shadowed-1 h-100 border-0 animation">
+
+					<div class="container text-center">
+						<img th:src="'/product_upload/'+${p.images[0]}"
+							class="m-2 card-image-shower">
+					</div>
+
+					<div class="card-body">
+
+						<a th:href="'/showProduct?product_id='+${p.id}" id="product-title" class="text-center card-title justify-content-center fs-13">[(${p.name})]</a>
+						<p id="product-highlight" class="text-center fs-10">[(${p.highlightShorter(p.highlights)})]</p>
+						<div class="row">
+
+							<div class="col col-sm-6 text-start">
+								<p class="text-start fs-13 text-bg-color">$.[(${#numbers.formatDecimal(p.getDiscountPrice(),
+									0, 'COMMA', 0, 'POINT')})]/-</p>
+							</div>
+
+							<div class="col col-sm-6 text-end">
+								<span class="del fs-13 text-danger">$.[(${#numbers.formatDecimal(p.price,
+									0, 'COMMA', 0, 'POINT')})]/-</span>
+							</div>
+
+						</div>
+
+						<div class="container text-center">
+							<button th:unless="${user!=null} and ${user.role == 'ROLE_SELLER' || user.role == 'ROLE_ADMIN'}" th:onclick="addToCart([[${p.id}]], [[${p.name}]], [[${p.getDiscountPrice()}]])" type="button"
+								class="btn primary-background text-white col-12">Agregar a
+								Carrito</button>
+						</div>
+
+					</div>
+
+
+				</div>
+
+
+			</div>
+
+
+
+
+
+		</div>
+
+	</div>
+
+
+
+</body>
+</html>
